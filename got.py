@@ -214,6 +214,114 @@ while numero > 0:
    numero -= 1
 print("Agora!")
 
-   
+
+
+
+senha = input("Digite sua senha: ")
+while senha != "1234":
+   print("Senha incorreta! Tente novamente")
+   senha = input("Digite sua senha: ")
+   print("Senha correta! Obrigado")
+   break
+
+tentativas = 0
+while True:
+   pin = input("Digite o codigo PIN: ")
+   tentativas +=1
+   if pin == "4231":
+      print("PIN correto! Obrigado")
+      break
+
+
+numero = int(input("Por favor, diigte um numero: "))
+while numero < 10:
+   print("Numero")
+   numero += 1
+   print("Execução Finalizada")
+
+
+numero = 2
+while numero < 30:
+   print(numero)
+   numero +=2
+
+
+
+
+print("Voce esta pronto?")
+numero = int(input("Por favor, digite um numero"))
+while numero != 42:
+   print(numero)
+   print("Agora")
+   numero += 1
+
+numero = int(input("Digite um número: "))
+i = 1
+while i < numero:
+   print(i)
+   i += 1
+   break
+
+def dobrar_ate_limite(limite)
+   numero = 1
+   while numero < limite:
+      print(numero * 2)
+      numero += 1
+      limite = int(input("Digite o seu limite: "))
+      dobrar_ate_limite(limite)
+
+base = int(input("Digite a base: "))
+expoente = int(input("Digite o expoente: "))
+
+resultado = 1
+while expoente > 0:
+   resultado *= base
+   expoente -= 1
+   print("O resultado é: ", resultado)
+
+soma = 0
+numero = 0
+while numero <= 100:
+   numero = int(input("Digite um número: "))
+   soma += numero
+   print("A soma total é: ", soma)
+
+import re
+def valida_senha(senha):
+   if len (senha) < 8:
+      return False
+   if not re.search("[a-z]", senha):
+      return False
+   if not re.search("[A-Z]", senha):
+      return False
+   if not re.search("[0-9]", senha):
+      return False
+   if not re.search("[@#$%&]", senha):
+      return False
+      return True
+   while True:
+      senha = input("Digite sua senha: ")
+      if valida_senha(senha):
+         print("Senha válida")
+         break
+      else:
+         print("Senha inválida")
+
+import random
+numero_secreto = random.randint(1,100)
+tentativas = 0
+while tentativas < 5:
+   tentativas = int(input("Adivinhe o número entre 1 a 100: "))
+   tentativas += 1
+   if tentativas == numero_secreto:
+      print("Parabéns, voce acertou")
+      break
+   elif tentativas < numero_secreto:
+      print("Tente um número maior")
+   else:
+      print("Tente um número menor")
+      if tentativas == 5:
+         print("Você perdeu")
+
 
 
