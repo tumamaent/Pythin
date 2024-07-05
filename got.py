@@ -323,5 +323,74 @@ while tentativas < 5:
       if tentativas == 5:
          print("Você perdeu")
 
+saldo_disponivel: 1000
+while True:
+   valor_saque = int(input("Insira o valor do saque: "))
+   if valor_saque %10 == 0:
+      print("Valor Invalido")
+      print("Saque Efetuado")
+      break
+
+while True:
+   palavra1 = input("Digite a primeira palavra:  ")
+   palavra2 = input("Digite a segunda palavra:  ")
+   if palavra1 == palavra2:
+      print("Palavras iguais")
+      break
+   else:
+      print("Palavras diferentes")
+
+palavra = "banana"
+print("palavra",3)
+
+string_entrada = input("Por favor, digite uma strikng")
+print("string_entrada ")
+print("" * len(string_entrada))
+
+def encontrar_maior_string(string1,string2)
+   if len(string1) > len(string2):
+      return string1
+   else:
+      return string2
+string1 = input("Digite a primeira string: ")
+   string2 = input("Digite a segunda string: ")
+   print(encontrar_maior_string(string1,string2))
+   if len (string1) == len(string2)
+   print("As strings são igualmente longas")
+  else:
+  print(f"A string mais longa")
+
+
+import re
+ 
+while True:
+    entrada = input("Ingrese la longitud de la línea de hashes: ")
+   
+    if re.fullmatch("[0-9]+", entrada):
+        longitud = int(entrada)
+        break
+    else:
+        print("Entrada no válida. Por favor, ingrese un número entero.")
+ 
+print('#' * longitud)
+
+def pritn_string(string)
+   if len(string) >= 20:
+      print(string[:20] + "...")
+   else:
+     print('*'* (20 - len(string)) + string)
+     string = input("Digite uma string: ")
+     print_string(string)
+
+
+def imprime_quadrao(palavra):
+   largura =30
+   tamanho_palavra = len(palavra)
+   espacos_laterais = (largura - tamanho_palavra) // 2
+   print("*" * largura)
+   print("*" + " " * espacos_laterais + palavra + " " * espacos_laterais)
+   print("*" * largura)
+   palavra = input("Digite uma palavra: ")
+   imprime_quadrao(palavra)
 
 
