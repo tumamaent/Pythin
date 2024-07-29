@@ -452,6 +452,51 @@ def cumprimentar_varias_vezes(nome, vezes):
         vezes -= 1
 cumprimentar_varias_vezes("####", 3)
 
+#Recebe uma lista como parametro
+show_tamanhos = [45, 44, 39, 40]
+def mediana(minha_lista: list):
+    ordenada = sorted(minha_lista)
+    centro_lista = len(ordenada) // 2
+    return ordenada[centro_lista]
+print( "A mediana é",mediana(show_tamanhos))
 
+idades = [1, 56, 34, 22, 5, 77, 5]
+print("A mediana das idades é",mediana(idades))
 
+#retorna uma lista
+def entrada_numeros():
+    numeros = []
+    while True:
+        entrada_usuario = input ("Por favor, digite um numero inteiro, deixe em branco para sair: ")
+        if entrada_usuario == 0:
+            break
+        numeros. append(int(entrada_usuario))
+        return numeros
+    
+def tamanh(lista):
+    return len(lista)
 
+def rango(numeros):
+    if not numeros:
+        return 0
+    menor = numeors[0]
+    maior = numeros[0]
+    for i in range(1, len(numeros)):
+        if numeros[i] < menor:
+            menor = numeros[i]
+            if numeros > maior:
+                maior = numeros[i]
+                return maior - menor
+            lista_de_numeros = [1, 5, 3, 8, 2]
+            diferenca = rango(lista_de_numeros)
+            print("A diferença entre o maior numero e o menor é: {diferenca}")
+
+minha_lista = [1, 2, ,3, 4, 5]
+
+for item in minha_lista:
+    print(item)
+
+minha_lista = "python"
+for item in minha_lista:
+    print(f"(item) * ", end="")
+          
